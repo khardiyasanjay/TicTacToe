@@ -29,6 +29,13 @@ public class Main {
         playerList.add(new Player(p2name, p2symbol));
 
         TicTacToeService ticTacToeService = new TicTacToeService(3, playerList);
-        ticTacToeService.board.getBoardView();
+
+        while (!ticTacToeService.winStatus()){
+            ticTacToeService.board.getBoardView();
+            System.out.println("Enter index to play : ");
+            int i = scanner.nextInt();
+            int j = scanner.nextInt();
+            ticTacToeService.move(i, j);
+        }
     }
 }
