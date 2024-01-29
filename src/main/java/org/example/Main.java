@@ -15,7 +15,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         List<Player> playerList = new ArrayList<>();
-
+        //default is 2 player with 3*3 board, we can take input for size.
         System.out.println("Enter player 1 name : ");
         String p1name = scanner.next();
         System.out.println("Enter player 1 symbol : ");
